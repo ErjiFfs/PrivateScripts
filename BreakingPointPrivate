@@ -1,22 +1,26 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local BP = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-local AutoFarm = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local Frame_2 = Instance.new("Frame")
-local check = Instance.new("ImageButton")
-local Detail = Instance.new("Frame")
+local AutoFarm = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
 local Frame_3 = Instance.new("Frame")
-local UIListLayout = Instance.new("UIListLayout")
+local check = Instance.new("ImageButton")
+local Detail = Instance.new("Frame")
 local AlwaysHit = Instance.new("TextButton")
 local TextLabel_3 = Instance.new("TextLabel")
 local Frame_4 = Instance.new("Frame")
 local check_2 = Instance.new("ImageButton")
 local Detail_2 = Instance.new("Frame")
-local KillAura = Instance.new("TextButton")
+local AntiAfk = Instance.new("TextButton")
 local TextLabel_4 = Instance.new("TextLabel")
 local Detail_3 = Instance.new("Frame")
-local AntiAfk = Instance.new("TextButton")
+local KillAura = Instance.new("TextButton")
 local TextLabel_5 = Instance.new("TextLabel")
 local Detail_4 = Instance.new("Frame")
 local Fullbright = Instance.new("TextButton")
@@ -26,6 +30,7 @@ local Invisible = Instance.new("TextButton")
 local TextLabel_7 = Instance.new("TextLabel")
 local Detail_6 = Instance.new("Frame")
 local Disclaimer = Instance.new("TextLabel")
+local UIListLayout = Instance.new("UIListLayout")
 
 --Properties:
 
@@ -37,11 +42,29 @@ Frame.Parent = BP
 Frame.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0.0303756986, 0, 0.0762052909, 0)
-Frame.Size = UDim2.new(0, 150, 0, 270)
+Frame.Size = UDim2.new(0, 150, 0, 265)
+Frame.ZIndex = -1
+
+TextLabel.Name = "!"
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(25, 29, 35)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 150, 0, 42)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "OPUS"
+TextLabel.TextColor3 = Color3.fromRGB(223, 223, 223)
+TextLabel.TextSize = 22.000
+
+Frame_2.Parent = TextLabel
+Frame_2.BackgroundColor3 = Color3.fromRGB(62, 70, 84)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 1, 0)
+Frame_2.Size = UDim2.new(0, 150, 0, 1)
 
 AutoFarm.Name = "AutoFarm"
 AutoFarm.Parent = Frame
 AutoFarm.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
+AutoFarm.BackgroundTransparency = 1.000
 AutoFarm.BorderSizePixel = 0
 AutoFarm.Position = UDim2.new(0, 0, 0.140000001, 0)
 AutoFarm.Size = UDim2.new(0, 150, 0, 30)
@@ -50,26 +73,26 @@ AutoFarm.Text = ""
 AutoFarm.TextColor3 = Color3.fromRGB(0, 0, 0)
 AutoFarm.TextSize = 14.000
 
-TextLabel.Parent = AutoFarm
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.0666666701, 0, 0, 0)
-TextLabel.Size = UDim2.new(0, 100, 0, 30)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Auto Farm"
-TextLabel.TextColor3 = Color3.fromRGB(223, 223, 223)
-TextLabel.TextSize = 18.000
-TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_2.Parent = AutoFarm
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0666666701, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 100, 0, 30)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Auto Farm"
+TextLabel_2.TextColor3 = Color3.fromRGB(223, 223, 223)
+TextLabel_2.TextSize = 18.000
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
 
-Frame_2.Parent = AutoFarm
-Frame_2.BackgroundColor3 = Color3.fromRGB(25, 29, 35)
-Frame_2.BorderColor3 = Color3.fromRGB(62, 70, 84)
-Frame_2.Position = UDim2.new(0.826666653, 0, 0.166666597, 0)
-Frame_2.Size = UDim2.new(0, 20, 0, 20)
+Frame_3.Parent = AutoFarm
+Frame_3.BackgroundColor3 = Color3.fromRGB(25, 29, 35)
+Frame_3.BorderColor3 = Color3.fromRGB(62, 70, 84)
+Frame_3.Position = UDim2.new(0.826666653, 0, 0.166666597, 0)
+Frame_3.Size = UDim2.new(0, 20, 0, 20)
 
 check.Name = "check"
-check.Parent = Frame_2
+check.Parent = Frame_3
 check.BackgroundTransparency = 1.000
 check.Size = UDim2.new(0, 20, 0, 20)
 check.ZIndex = 2
@@ -84,30 +107,10 @@ Detail.BorderSizePixel = 0
 Detail.Position = UDim2.new(0, 0, 1, 0)
 Detail.Size = UDim2.new(0, 150, 0, 1)
 
-TextLabel_2.Name = "!"
-TextLabel_2.Parent = Frame
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(25, 29, 35)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Size = UDim2.new(0, 150, 0, 42)
-TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "OPUS"
-TextLabel_2.TextColor3 = Color3.fromRGB(223, 223, 223)
-TextLabel_2.TextSize = 22.000
-
-Frame_3.Parent = TextLabel_2
-Frame_3.BackgroundColor3 = Color3.fromRGB(62, 70, 84)
-Frame_3.BorderSizePixel = 0
-Frame_3.Position = UDim2.new(0, 0, 1, 0)
-Frame_3.Size = UDim2.new(0, 150, 0, 1)
-
-UIListLayout.Parent = Frame
-UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout.Padding = UDim.new(0, 1)
-
 AlwaysHit.Name = "AlwaysHit"
 AlwaysHit.Parent = Frame
 AlwaysHit.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
+AlwaysHit.BackgroundTransparency = 1.000
 AlwaysHit.BorderSizePixel = 0
 AlwaysHit.Position = UDim2.new(0, 0, 0.140000001, 0)
 AlwaysHit.Size = UDim2.new(0, 150, 0, 30)
@@ -150,37 +153,10 @@ Detail_2.BorderSizePixel = 0
 Detail_2.Position = UDim2.new(0, 0, 1, 0)
 Detail_2.Size = UDim2.new(0, 150, 0, 1)
 
-KillAura.Name = "KillAura"
-KillAura.Parent = Frame
-KillAura.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
-KillAura.BorderSizePixel = 0
-KillAura.Position = UDim2.new(0, 0, 0.140000001, 0)
-KillAura.Size = UDim2.new(0, 150, 0, 30)
-KillAura.Font = Enum.Font.SourceSans
-KillAura.Text = ""
-KillAura.TextColor3 = Color3.fromRGB(0, 0, 0)
-KillAura.TextSize = 14.000
-
-TextLabel_4.Parent = KillAura
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Size = UDim2.new(0, 150, 0, 30)
-TextLabel_4.Font = Enum.Font.SourceSans
-TextLabel_4.Text = "Kill Aura"
-TextLabel_4.TextColor3 = Color3.fromRGB(223, 223, 223)
-TextLabel_4.TextSize = 18.000
-
-Detail_3.Name = "Detail"
-Detail_3.Parent = KillAura
-Detail_3.BackgroundColor3 = Color3.fromRGB(62, 70, 84)
-Detail_3.BorderSizePixel = 0
-Detail_3.Position = UDim2.new(0, 0, 1, 0)
-Detail_3.Size = UDim2.new(0, 150, 0, 1)
-
 AntiAfk.Name = "AntiAfk"
 AntiAfk.Parent = Frame
 AntiAfk.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
+AntiAfk.BackgroundTransparency = 1.000
 AntiAfk.BorderSizePixel = 0
 AntiAfk.Position = UDim2.new(0, 0, 0.140000001, 0)
 AntiAfk.Size = UDim2.new(0, 150, 0, 30)
@@ -189,18 +165,47 @@ AntiAfk.Text = ""
 AntiAfk.TextColor3 = Color3.fromRGB(0, 0, 0)
 AntiAfk.TextSize = 14.000
 
-TextLabel_5.Parent = AntiAfk
+TextLabel_4.Parent = AntiAfk
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Size = UDim2.new(0, 150, 0, 30)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Anti AFK"
+TextLabel_4.TextColor3 = Color3.fromRGB(223, 223, 223)
+TextLabel_4.TextSize = 18.000
+
+Detail_3.Name = "Detail"
+Detail_3.Parent = AntiAfk
+Detail_3.BackgroundColor3 = Color3.fromRGB(62, 70, 84)
+Detail_3.BorderSizePixel = 0
+Detail_3.Position = UDim2.new(0, 0, 1, 0)
+Detail_3.Size = UDim2.new(0, 150, 0, 1)
+
+KillAura.Name = "KillAura"
+KillAura.Parent = Frame
+KillAura.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
+KillAura.BackgroundTransparency = 1.000
+KillAura.BorderSizePixel = 0
+KillAura.Position = UDim2.new(0, 0, 0.140000001, 0)
+KillAura.Size = UDim2.new(0, 150, 0, 30)
+KillAura.Font = Enum.Font.SourceSans
+KillAura.Text = ""
+KillAura.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillAura.TextSize = 14.000
+
+TextLabel_5.Parent = KillAura
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.BackgroundTransparency = 1.000
 TextLabel_5.BorderSizePixel = 0
 TextLabel_5.Size = UDim2.new(0, 150, 0, 30)
 TextLabel_5.Font = Enum.Font.SourceSans
-TextLabel_5.Text = "Anti AFK"
+TextLabel_5.Text = "Kill Aura"
 TextLabel_5.TextColor3 = Color3.fromRGB(223, 223, 223)
 TextLabel_5.TextSize = 18.000
 
 Detail_4.Name = "Detail"
-Detail_4.Parent = AntiAfk
+Detail_4.Parent = KillAura
 Detail_4.BackgroundColor3 = Color3.fromRGB(62, 70, 84)
 Detail_4.BorderSizePixel = 0
 Detail_4.Position = UDim2.new(0, 0, 1, 0)
@@ -209,6 +214,7 @@ Detail_4.Size = UDim2.new(0, 150, 0, 1)
 Fullbright.Name = "Fullbright"
 Fullbright.Parent = Frame
 Fullbright.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
+Fullbright.BackgroundTransparency = 1.000
 Fullbright.BorderSizePixel = 0
 Fullbright.Position = UDim2.new(0, 0, 0.140000001, 0)
 Fullbright.Size = UDim2.new(0, 150, 0, 30)
@@ -237,6 +243,7 @@ Detail_5.Size = UDim2.new(0, 150, 0, 1)
 Invisible.Name = "Invisible"
 Invisible.Parent = Frame
 Invisible.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
+Invisible.BackgroundTransparency = 1.000
 Invisible.BorderSizePixel = 0
 Invisible.Position = UDim2.new(0, 0, 0.140000001, 0)
 Invisible.Size = UDim2.new(0, 150, 0, 30)
@@ -275,9 +282,12 @@ Disclaimer.TextColor3 = Color3.fromRGB(112, 112, 112)
 Disclaimer.TextSize = 12.000
 Disclaimer.TextWrapped = true
 
+UIListLayout.Parent = Frame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
 -- Scripts:
 
-local function QZZFAC_fake_script() -- BP.LocalScript 
+local function NNHI_fake_script() -- BP.LocalScript 
 	local script = Instance.new('LocalScript', BP)
 
 	--[ LOCAL ]--
@@ -287,7 +297,6 @@ local function QZZFAC_fake_script() -- BP.LocalScript
 	local AF = script.Parent.Frame.AutoFarm
 	local AA = script.Parent.Frame.AntiAfk
 	local AH = script.Parent.Frame.AlwaysHit
-	local NC = script.Parent.Frame.Noclip
 	local IY = script.Parent.Frame.Invisible
 	
 	--[ LOCAL-2 ]--
@@ -410,4 +419,4 @@ local function QZZFAC_fake_script() -- BP.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QZZFAC_fake_script)()
+coroutine.wrap(NNHI_fake_script)()
