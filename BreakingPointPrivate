@@ -1,422 +1,1201 @@
 -- Gui to Lua
+
+
 -- Version: 3.2
+
+
 
 -- Instances:
 
+
+
 local BP = Instance.new("ScreenGui")
+
+
 local Frame = Instance.new("Frame")
+
+
 local TextLabel = Instance.new("TextLabel")
+
+
 local Frame_2 = Instance.new("Frame")
-local AutoFarm = Instance.new("TextButton")
+
+
+local A = Instance.new("TextButton")
+
+
 local TextLabel_2 = Instance.new("TextLabel")
+
+
 local Frame_3 = Instance.new("Frame")
+
+
 local check = Instance.new("ImageButton")
+
+
 local Detail = Instance.new("Frame")
-local AlwaysHit = Instance.new("TextButton")
+
+
+local B = Instance.new("TextButton")
+
+
 local TextLabel_3 = Instance.new("TextLabel")
+
+
 local Frame_4 = Instance.new("Frame")
+
+
 local check_2 = Instance.new("ImageButton")
+
+
 local Detail_2 = Instance.new("Frame")
-local AntiAfk = Instance.new("TextButton")
+
+
+local C = Instance.new("TextButton")
+
+
 local TextLabel_4 = Instance.new("TextLabel")
+
+
 local Detail_3 = Instance.new("Frame")
-local KillAura = Instance.new("TextButton")
+
+
+local D = Instance.new("TextButton")
+
+
 local TextLabel_5 = Instance.new("TextLabel")
+
+
 local Detail_4 = Instance.new("Frame")
-local Fullbright = Instance.new("TextButton")
+
+
+local E = Instance.new("TextButton")
+
+
 local TextLabel_6 = Instance.new("TextLabel")
+
+
 local Detail_5 = Instance.new("Frame")
-local Invisible = Instance.new("TextButton")
+
+
+local F = Instance.new("TextButton")
+
+
 local TextLabel_7 = Instance.new("TextLabel")
+
+
 local Detail_6 = Instance.new("Frame")
-local Disclaimer = Instance.new("TextLabel")
+
+
+local X = Instance.new("TextLabel")
+
+
 local UIListLayout = Instance.new("UIListLayout")
+
+
 
 --Properties:
 
+
+
 BP.Name = "BP"
+
+
 BP.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+
 BP.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
+
+
 Frame.Parent = BP
+
+
 Frame.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
+
+
 Frame.BorderSizePixel = 0
+
+
 Frame.Position = UDim2.new(0.0303756986, 0, 0.0762052909, 0)
+
+
 Frame.Size = UDim2.new(0, 150, 0, 265)
+
+
 Frame.ZIndex = -1
 
+
+
 TextLabel.Name = "!"
+
+
 TextLabel.Parent = Frame
+
+
 TextLabel.BackgroundColor3 = Color3.fromRGB(25, 29, 35)
+
+
 TextLabel.BorderSizePixel = 0
+
+
 TextLabel.Size = UDim2.new(0, 150, 0, 42)
+
+
 TextLabel.Font = Enum.Font.SourceSans
+
+
 TextLabel.Text = "OPUS"
+
+
 TextLabel.TextColor3 = Color3.fromRGB(223, 223, 223)
+
+
 TextLabel.TextSize = 22.000
 
+
+
 Frame_2.Parent = TextLabel
+
+
 Frame_2.BackgroundColor3 = Color3.fromRGB(62, 70, 84)
+
+
 Frame_2.BorderSizePixel = 0
+
+
 Frame_2.Position = UDim2.new(0, 0, 1, 0)
+
+
 Frame_2.Size = UDim2.new(0, 150, 0, 1)
 
-AutoFarm.Name = "AutoFarm"
-AutoFarm.Parent = Frame
-AutoFarm.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
-AutoFarm.BackgroundTransparency = 1.000
-AutoFarm.BorderSizePixel = 0
-AutoFarm.Position = UDim2.new(0, 0, 0.140000001, 0)
-AutoFarm.Size = UDim2.new(0, 150, 0, 30)
-AutoFarm.Font = Enum.Font.SourceSans
-AutoFarm.Text = ""
-AutoFarm.TextColor3 = Color3.fromRGB(0, 0, 0)
-AutoFarm.TextSize = 14.000
 
-TextLabel_2.Parent = AutoFarm
+
+A.Name = "A"
+
+
+A.Parent = Frame
+
+
+A.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
+
+
+A.BackgroundTransparency = 1.000
+
+
+A.BorderSizePixel = 0
+
+
+A.Position = UDim2.new(0, 0, 0.140000001, 0)
+
+
+A.Size = UDim2.new(0, 150, 0, 30)
+
+
+A.Font = Enum.Font.SourceSans
+
+
+A.Text = ""
+
+
+A.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+A.TextSize = 14.000
+
+
+
+TextLabel_2.Parent = A
+
+
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 TextLabel_2.BackgroundTransparency = 1.000
+
+
 TextLabel_2.BorderSizePixel = 0
+
+
 TextLabel_2.Position = UDim2.new(0.0666666701, 0, 0, 0)
+
+
 TextLabel_2.Size = UDim2.new(0, 100, 0, 30)
+
+
 TextLabel_2.Font = Enum.Font.SourceSans
+
+
 TextLabel_2.Text = "Auto Farm"
+
+
 TextLabel_2.TextColor3 = Color3.fromRGB(223, 223, 223)
+
+
 TextLabel_2.TextSize = 18.000
+
+
 TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
 
-Frame_3.Parent = AutoFarm
+
+
+Frame_3.Parent = A
+
+
 Frame_3.BackgroundColor3 = Color3.fromRGB(25, 29, 35)
+
+
 Frame_3.BorderColor3 = Color3.fromRGB(62, 70, 84)
+
+
 Frame_3.Position = UDim2.new(0.826666653, 0, 0.166666597, 0)
+
+
 Frame_3.Size = UDim2.new(0, 20, 0, 20)
 
+
+
 check.Name = "check"
+
+
 check.Parent = Frame_3
+
+
 check.BackgroundTransparency = 1.000
+
+
 check.Size = UDim2.new(0, 20, 0, 20)
+
+
+check.Visible = false
+
+
 check.ZIndex = 2
+
+
 check.Image = "rbxassetid://3926305904"
+
+
 check.ImageRectOffset = Vector2.new(312, 4)
+
+
 check.ImageRectSize = Vector2.new(24, 24)
 
+
+
 Detail.Name = "Detail"
-Detail.Parent = AutoFarm
+
+
+Detail.Parent = A
+
+
 Detail.BackgroundColor3 = Color3.fromRGB(62, 70, 84)
+
+
 Detail.BorderSizePixel = 0
+
+
 Detail.Position = UDim2.new(0, 0, 1, 0)
+
+
 Detail.Size = UDim2.new(0, 150, 0, 1)
 
-AlwaysHit.Name = "AlwaysHit"
-AlwaysHit.Parent = Frame
-AlwaysHit.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
-AlwaysHit.BackgroundTransparency = 1.000
-AlwaysHit.BorderSizePixel = 0
-AlwaysHit.Position = UDim2.new(0, 0, 0.140000001, 0)
-AlwaysHit.Size = UDim2.new(0, 150, 0, 30)
-AlwaysHit.Font = Enum.Font.SourceSans
-AlwaysHit.Text = ""
-AlwaysHit.TextColor3 = Color3.fromRGB(0, 0, 0)
-AlwaysHit.TextSize = 14.000
 
-TextLabel_3.Parent = AlwaysHit
+
+B.Name = "B"
+
+
+B.Parent = Frame
+
+
+B.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
+
+
+B.BackgroundTransparency = 1.000
+
+
+B.BorderSizePixel = 0
+
+
+B.Position = UDim2.new(0, 0, 0.140000001, 0)
+
+
+B.Size = UDim2.new(0, 150, 0, 30)
+
+
+B.Font = Enum.Font.SourceSans
+
+
+B.Text = ""
+
+
+B.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+B.TextSize = 14.000
+
+
+
+TextLabel_3.Parent = B
+
+
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 TextLabel_3.BackgroundTransparency = 1.000
+
+
 TextLabel_3.BorderSizePixel = 0
+
+
 TextLabel_3.Position = UDim2.new(0.0666666701, 0, 0, 0)
+
+
 TextLabel_3.Size = UDim2.new(0, 100, 0, 30)
+
+
 TextLabel_3.Font = Enum.Font.SourceSans
+
+
 TextLabel_3.Text = "Always Hit"
+
+
 TextLabel_3.TextColor3 = Color3.fromRGB(223, 223, 223)
+
+
 TextLabel_3.TextSize = 18.000
+
+
 TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
 
-Frame_4.Parent = AlwaysHit
+
+
+Frame_4.Parent = B
+
+
 Frame_4.BackgroundColor3 = Color3.fromRGB(25, 29, 35)
+
+
 Frame_4.BorderColor3 = Color3.fromRGB(62, 70, 84)
+
+
 Frame_4.Position = UDim2.new(0.826666653, 0, 0.166666597, 0)
+
+
 Frame_4.Size = UDim2.new(0, 20, 0, 20)
 
+
+
 check_2.Name = "check"
+
+
 check_2.Parent = Frame_4
+
+
 check_2.BackgroundTransparency = 1.000
+
+
 check_2.Size = UDim2.new(0, 20, 0, 20)
+
+
+check_2.Visible = false
+
+
 check_2.ZIndex = 2
+
+
 check_2.Image = "rbxassetid://3926305904"
+
+
 check_2.ImageRectOffset = Vector2.new(312, 4)
+
+
 check_2.ImageRectSize = Vector2.new(24, 24)
 
+
+
 Detail_2.Name = "Detail"
-Detail_2.Parent = AlwaysHit
+
+
+Detail_2.Parent = B
+
+
 Detail_2.BackgroundColor3 = Color3.fromRGB(62, 70, 84)
+
+
 Detail_2.BorderSizePixel = 0
+
+
 Detail_2.Position = UDim2.new(0, 0, 1, 0)
+
+
 Detail_2.Size = UDim2.new(0, 150, 0, 1)
 
-AntiAfk.Name = "AntiAfk"
-AntiAfk.Parent = Frame
-AntiAfk.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
-AntiAfk.BackgroundTransparency = 1.000
-AntiAfk.BorderSizePixel = 0
-AntiAfk.Position = UDim2.new(0, 0, 0.140000001, 0)
-AntiAfk.Size = UDim2.new(0, 150, 0, 30)
-AntiAfk.Font = Enum.Font.SourceSans
-AntiAfk.Text = ""
-AntiAfk.TextColor3 = Color3.fromRGB(0, 0, 0)
-AntiAfk.TextSize = 14.000
 
-TextLabel_4.Parent = AntiAfk
+
+C.Name = "C"
+
+
+C.Parent = Frame
+
+
+C.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
+
+
+C.BackgroundTransparency = 1.000
+
+
+C.BorderSizePixel = 0
+
+
+C.Position = UDim2.new(0, 0, 0.140000001, 0)
+
+
+C.Size = UDim2.new(0, 150, 0, 30)
+
+
+C.Font = Enum.Font.SourceSans
+
+
+C.Text = ""
+
+
+C.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+C.TextSize = 14.000
+
+
+
+TextLabel_4.Parent = C
+
+
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 TextLabel_4.BackgroundTransparency = 1.000
+
+
 TextLabel_4.BorderSizePixel = 0
+
+
 TextLabel_4.Size = UDim2.new(0, 150, 0, 30)
+
+
 TextLabel_4.Font = Enum.Font.SourceSans
+
+
 TextLabel_4.Text = "Anti AFK"
+
+
 TextLabel_4.TextColor3 = Color3.fromRGB(223, 223, 223)
+
+
 TextLabel_4.TextSize = 18.000
 
+
+
 Detail_3.Name = "Detail"
-Detail_3.Parent = AntiAfk
+
+
+Detail_3.Parent = C
+
+
 Detail_3.BackgroundColor3 = Color3.fromRGB(62, 70, 84)
+
+
 Detail_3.BorderSizePixel = 0
+
+
 Detail_3.Position = UDim2.new(0, 0, 1, 0)
+
+
 Detail_3.Size = UDim2.new(0, 150, 0, 1)
 
-KillAura.Name = "KillAura"
-KillAura.Parent = Frame
-KillAura.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
-KillAura.BackgroundTransparency = 1.000
-KillAura.BorderSizePixel = 0
-KillAura.Position = UDim2.new(0, 0, 0.140000001, 0)
-KillAura.Size = UDim2.new(0, 150, 0, 30)
-KillAura.Font = Enum.Font.SourceSans
-KillAura.Text = ""
-KillAura.TextColor3 = Color3.fromRGB(0, 0, 0)
-KillAura.TextSize = 14.000
 
-TextLabel_5.Parent = KillAura
+
+D.Name = "D"
+
+
+D.Parent = Frame
+
+
+D.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
+
+
+D.BackgroundTransparency = 1.000
+
+
+D.BorderSizePixel = 0
+
+
+D.Position = UDim2.new(0, 0, 0.140000001, 0)
+
+
+D.Size = UDim2.new(0, 150, 0, 30)
+
+
+D.Font = Enum.Font.SourceSans
+
+
+D.Text = ""
+
+
+D.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+D.TextSize = 14.000
+
+
+
+TextLabel_5.Parent = D
+
+
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 TextLabel_5.BackgroundTransparency = 1.000
+
+
 TextLabel_5.BorderSizePixel = 0
+
+
 TextLabel_5.Size = UDim2.new(0, 150, 0, 30)
+
+
 TextLabel_5.Font = Enum.Font.SourceSans
+
+
 TextLabel_5.Text = "Kill Aura"
+
+
 TextLabel_5.TextColor3 = Color3.fromRGB(223, 223, 223)
+
+
 TextLabel_5.TextSize = 18.000
 
+
+
 Detail_4.Name = "Detail"
-Detail_4.Parent = KillAura
+
+
+Detail_4.Parent = D
+
+
 Detail_4.BackgroundColor3 = Color3.fromRGB(62, 70, 84)
+
+
 Detail_4.BorderSizePixel = 0
+
+
 Detail_4.Position = UDim2.new(0, 0, 1, 0)
+
+
 Detail_4.Size = UDim2.new(0, 150, 0, 1)
 
-Fullbright.Name = "Fullbright"
-Fullbright.Parent = Frame
-Fullbright.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
-Fullbright.BackgroundTransparency = 1.000
-Fullbright.BorderSizePixel = 0
-Fullbright.Position = UDim2.new(0, 0, 0.140000001, 0)
-Fullbright.Size = UDim2.new(0, 150, 0, 30)
-Fullbright.Font = Enum.Font.SourceSans
-Fullbright.Text = ""
-Fullbright.TextColor3 = Color3.fromRGB(0, 0, 0)
-Fullbright.TextSize = 14.000
 
-TextLabel_6.Parent = Fullbright
+
+E.Name = "E"
+
+
+E.Parent = Frame
+
+
+E.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
+
+
+E.BackgroundTransparency = 1.000
+
+
+E.BorderSizePixel = 0
+
+
+E.Position = UDim2.new(0, 0, 0.140000001, 0)
+
+
+E.Size = UDim2.new(0, 150, 0, 30)
+
+
+E.Font = Enum.Font.SourceSans
+
+
+E.Text = ""
+
+
+E.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+E.TextSize = 14.000
+
+
+
+TextLabel_6.Parent = E
+
+
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 TextLabel_6.BackgroundTransparency = 1.000
+
+
 TextLabel_6.BorderSizePixel = 0
+
+
 TextLabel_6.Size = UDim2.new(0, 150, 0, 30)
+
+
 TextLabel_6.Font = Enum.Font.SourceSans
+
+
 TextLabel_6.Text = "Fullbright"
+
+
 TextLabel_6.TextColor3 = Color3.fromRGB(223, 223, 223)
+
+
 TextLabel_6.TextSize = 18.000
 
+
+
 Detail_5.Name = "Detail"
-Detail_5.Parent = Fullbright
+
+
+Detail_5.Parent = E
+
+
 Detail_5.BackgroundColor3 = Color3.fromRGB(62, 70, 84)
+
+
 Detail_5.BorderSizePixel = 0
+
+
 Detail_5.Position = UDim2.new(0, 0, 1, 0)
+
+
 Detail_5.Size = UDim2.new(0, 150, 0, 1)
 
-Invisible.Name = "Invisible"
-Invisible.Parent = Frame
-Invisible.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
-Invisible.BackgroundTransparency = 1.000
-Invisible.BorderSizePixel = 0
-Invisible.Position = UDim2.new(0, 0, 0.140000001, 0)
-Invisible.Size = UDim2.new(0, 150, 0, 30)
-Invisible.Font = Enum.Font.SourceSans
-Invisible.Text = ""
-Invisible.TextColor3 = Color3.fromRGB(0, 0, 0)
-Invisible.TextSize = 14.000
 
-TextLabel_7.Parent = Invisible
+
+F.Name = "F"
+
+
+F.Parent = Frame
+
+
+F.BackgroundColor3 = Color3.fromRGB(31, 35, 42)
+
+
+F.BackgroundTransparency = 1.000
+
+
+F.BorderSizePixel = 0
+
+
+F.Position = UDim2.new(0, 0, 0.140000001, 0)
+
+
+F.Size = UDim2.new(0, 150, 0, 30)
+
+
+F.Font = Enum.Font.SourceSans
+
+
+F.Text = ""
+
+
+F.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+F.TextSize = 14.000
+
+
+
+TextLabel_7.Parent = F
+
+
 TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 TextLabel_7.BackgroundTransparency = 1.000
+
+
 TextLabel_7.BorderSizePixel = 0
+
+
 TextLabel_7.Size = UDim2.new(0, 150, 0, 30)
+
+
 TextLabel_7.Font = Enum.Font.SourceSans
+
+
 TextLabel_7.Text = "Infinite Yield"
+
+
 TextLabel_7.TextColor3 = Color3.fromRGB(223, 223, 223)
+
+
 TextLabel_7.TextSize = 18.000
 
+
+
 Detail_6.Name = "Detail"
-Detail_6.Parent = Invisible
+
+
+Detail_6.Parent = F
+
+
 Detail_6.BackgroundColor3 = Color3.fromRGB(62, 70, 84)
+
+
 Detail_6.BorderSizePixel = 0
+
+
 Detail_6.Position = UDim2.new(0, 0, 1, 0)
+
+
 Detail_6.Size = UDim2.new(0, 150, 0, 1)
 
-Disclaimer.Name = "Disclaimer"
-Disclaimer.Parent = Frame
-Disclaimer.BackgroundColor3 = Color3.fromRGB(25, 29, 35)
-Disclaimer.BackgroundTransparency = 1.000
-Disclaimer.BorderSizePixel = 0
-Disclaimer.Position = UDim2.new(0, 0, 0.866666675, 0)
-Disclaimer.Size = UDim2.new(0, 150, 0, 40)
-Disclaimer.Font = Enum.Font.SourceSans
-Disclaimer.Text = "I did not script any of the events in this GUI. This was ment as a private gui and was made by Cl_yz#4109"
-Disclaimer.TextColor3 = Color3.fromRGB(112, 112, 112)
-Disclaimer.TextSize = 12.000
-Disclaimer.TextWrapped = true
+
+
+X.Name = "X"
+
+
+X.Parent = Frame
+
+
+X.BackgroundColor3 = Color3.fromRGB(25, 29, 35)
+
+
+X.BackgroundTransparency = 1.000
+
+
+X.BorderSizePixel = 0
+
+
+X.Position = UDim2.new(0, 0, 0.866666675, 0)
+
+
+X.Size = UDim2.new(0, 150, 0, 40)
+
+
+X.Font = Enum.Font.SourceSans
+
+
+X.Text = "I did not script any of the events in this GUI. This was ment as a private gui and was made by Cl_yz#4109"
+
+
+X.TextColor3 = Color3.fromRGB(112, 112, 112)
+
+
+X.TextSize = 12.000
+
+
+X.TextWrapped = true
+
+
 
 UIListLayout.Parent = Frame
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+
 
 -- Scripts:
 
-local function NNHI_fake_script() -- BP.LocalScript 
+
+
+local function CKEEVN_fake_script() -- BP.LocalScript 
+
+
 	local script = Instance.new('LocalScript', BP)
 
+
+
 	--[ LOCAL ]--
+
+
 	local Frame = script.Parent.Frame
-	local KA = script.Parent.Frame.KillAura
-	local FB = script.Parent.Frame.Fullbright
-	local AF = script.Parent.Frame.AutoFarm
-	local AA = script.Parent.Frame.AntiAfk
-	local AH = script.Parent.Frame.AlwaysHit
-	local IY = script.Parent.Frame.Invisible
+
+
+	local KA = script.Parent.Frame.D
+
+
+	local FB = script.Parent.Frame.E
+
+
+	local AF = script.Parent.Frame.A
+
+
+	local AA = script.Parent.Frame.C
+
+
+	local AH = script.Parent.Frame.B
+
+
+	local IY = script.Parent.Frame.F
+
+
 	
+
+
 	--[ LOCAL-2 ]--
+
+
 	
+
+
 	local AFv = false
+
+
 	local AHv = false
+
+
 	
+
+
 	--[ BUTTONS ]--
+
+
 	
+
+
 	KA.MouseButton1Click:Connect(function()
+
+
 		loadstring(game:HttpGet('https://pastebin.com/raw/MLPypHYv', true))()
+
+
 	end)
+
+
 	
+
+
 	FB.MouseButton1Click:Connect(function()
+
+
 		loadstring(game:HttpGet("https://pastebin.com/raw/06iG6YkU", true))()
+
+
 	end)
+
+
 	
+
+
 	AF.MouseButton1Click:Connect(function()
+
+
 		if AFv == false then
+
+
 			AFv = true
+
+
 			AF.Frame.check.Visible = true
+
+
 			while AFv == true do
+
+
 				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(16, "public")
+
+
 				wait()
+
+
 				for i,v in pairs(game.Players:GetPlayers()) do
+
+
 					if v.Name ~= game.Players.LocalPlayer.Name then
+
+
 						game:GetService("ReplicatedStorage").RemoteEvent:FireServer(30, v)
+
+
 					end
+
+
 				end
+
+
 			end
+
+
 		else
+
+
 			AFv = false
+
+
 			AF.Frame.check.Visible = false
+
+
 		end
+
+
 	end)
+
+
 	
+
+
 	AA.MouseButton1Click:Connect(function()
+
+
 		local vu = game:GetService("VirtualUser")
+
+
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
+
+
 			vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+
 			wait(1)
+
+
 			vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+
 		end)
+
+
 	end)
+
+
 	
+
+
 	AH.MouseButton1Click:Connect(function()
+
+
 		if AHv == false then
+
+
 			AFv = true
+
+
 			AF.Frame.check.Visible = true
+
+
 			while AHv == true do
+
+
 				for i,v in pairs(game.Players:GetPlayers()) do
+
+
 					if v.Name ~= game.Players.LocalPlayer.Name then
+
+
 						if game.Workspace:FindFirstChild(v.Name) then
+
+
 							if game.Workspace[v.Name].Humanoid.Sit ~= true then
+
+
 								if game.Workspace[v.Name]:FindFirstChild("Blade") then
+
+
 									game:GetService("ReplicatedStorage").RemoteEvent:FireServer(37, CFrame.new(Vector3.new(0, 0, 0), Vector3.new(0, 0, 0)), Vector3.new(v.Character.HumanoidRootPart.CFrame.x, 4, v.Character.HumanoidRootPart.CFrame.z), Vector3.new(0, 0, 0))
+
+
 									wait(.1)
+
+
 									game:GetService("ReplicatedStorage").RemoteEvent:FireServer(43, v.Character.HumanoidRootPart, v, "IIlIla", true)
+
+
 								else
+
+
 									if v.Backpack:FindFirstChild("Blade") then
+
+
 										game:GetService("ReplicatedStorage").RemoteEvent:FireServer(37, CFrame.new(Vector3.new(0, 0, 0), Vector3.new(0, 0, 0)), Vector3.new(v.Character.HumanoidRootPart.CFrame.x, 4, v.Character.HumanoidRootPart.CFrame.z), Vector3.new(0, 0, 0))
+
+
 										wait(.1)
+
+
 										game:GetService("ReplicatedStorage").RemoteEvent:FireServer(43, v.Character.HumanoidRootPart, v, "IIlIla", true)
+
+
 									end
+
+
 								end
+
+
 							end
+
+
 						end
+
+
 					end
+
+
 				end
+
+
 			end
+
+
 		else
+
+
 			AFv = false
+
+
 			AF.Frame.check.Visible = false
+
+
 		end
+
+
 	end)
+
+
 	
+
+
 	IY.MouseButton1Click:Connect(function()
+
+
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+
 	end)
+
+
 	
+
+
 	--[ DRAG-FRAME ]--
+
+
 	
+
+
 	local UserInputService = game:GetService("UserInputService")
+
+
 	
+
+
 	local gui = script.Parent.Frame
+
+
 	
+
+
 	local dragging
+
+
 	local dragInput
+
+
 	local dragStart
+
+
 	local startPos
+
+
 	
+
+
 	local function update(input)
+
+
 		local delta = input.Position - dragStart
+
+
 		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+
+
 	end
+
+
 	
+
+
 	gui.InputBegan:Connect(function(input)
+
+
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+
+
 			dragging = true
+
+
 			dragStart = input.Position
+
+
 			startPos = gui.Position
+
+
 	
+
+
 			input.Changed:Connect(function()
+
+
 				if input.UserInputState == Enum.UserInputState.End then
+
+
 					dragging = false
+
+
 				end
+
+
 			end)
+
+
 		end
+
+
 	end)
+
+
 	
+
+
 	gui.InputChanged:Connect(function(input)
+
+
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+
+
 			dragInput = input
+
+
 		end
+
+
 	end)
+
+
 	
+
+
 	UserInputService.InputChanged:Connect(function(input)
+
+
 		if input == dragInput and dragging then
+
+
 			update(input)
+
+
 		end
+
+
 	end)
+
+
 end
-coroutine.wrap(NNHI_fake_script)()
+
+
+coroutine.wrap(CKEEVN_fake_script)()
+
+
